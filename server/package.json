@@ -1,0 +1,23 @@
+{
+  "name": "mern-auth",
+  "version": "1.0.0",
+  "description": "A user authentication application using mern stack and typescript.",
+  "main": "server.js",
+  "repository": "https://github.com/kayraberktuncer/mern-auth.git",
+  "author": "Kayra <kayrabtuncer@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc -w",
+    "start": "node dist/server.js",
+    "dev": "nodemon dist/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "dotenv": "^8.2.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.3"
+  }
+}
