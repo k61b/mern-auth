@@ -89,6 +89,11 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
+"@types/is-empty@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@types/is-empty/-/is-empty-1.2.0.tgz#16bc578060c9b0b6953339eea906c255a375bf86"
+  integrity sha512-brJKf2boFhUxTDxlpI7cstwiUtA2ovm38UzFTi9aZI6//ARncaV+Q5ALjCaJqXaMtdZk/oPTJnSutugsZR6h8A==
+
 "@types/jsonwebtoken@*", "@types/jsonwebtoken@^8.5.0":
   version "8.5.0"
   resolved "https://registry.yarnpkg.com/@types/jsonwebtoken/-/jsonwebtoken-8.5.0.tgz#2531d5e300803aa63279b232c014acf780c981c5"
@@ -645,6 +650,11 @@ is-core-module@^2.2.0:
   integrity sha512-XRAfAdyyY5F5cOXn7hYQDqh2Xmii+DEfIcQGxK/uNwMHhIkPWO0g8msXcbzLe+MpGoR951MlqM/2iIlU4vKDdQ==
   dependencies:
     has "^1.0.3"
+
+is-empty@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/is-empty/-/is-empty-1.2.0.tgz#de9bb5b278738a05a0b09a57e1fb4d4a341a9f6b"
+  integrity sha1-3pu1snhzigWgsJpX4ftNSjQan2s=
 
 is-fullwidth-code-point@^1.0.0:
   version "1.0.0"
