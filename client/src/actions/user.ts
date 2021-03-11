@@ -3,21 +3,21 @@ import { setLoading } from "../reducers/loadReducer";
 import { setUser } from "../reducers/userReducer";
 
 interface IDefaultProps {
-    username: string,
+    email: string,
     password: string
 }
 
 interface IRegisterProps extends IDefaultProps {
-    email: string
+    username: string
 }
 
 export const registerUser = async (
-    { username, email, password }: IRegisterProps
+    { email, username, password }: IRegisterProps
 ): Promise<void> => {
     try {
         await axios.post("http://localhost:5000/auth/register", {
-            username,
             email,
+            username,
             password
         }).then(({ data }) => {
             console.log("You have successfully registered!")
@@ -31,12 +31,12 @@ export const registerUser = async (
 }
 
 export const loginUser = async (
-    { username, password }: IDefaultProps,
+    { email, password }: IDefaultProps,
     dispatch: any
 ): Promise<void> => {
     try {
         await axios.post("http://localhost:5000/auth/login", {
-            username,
+            email,
             password
         }).then(({ data }) => {
             dispatch(setUser(data.user))

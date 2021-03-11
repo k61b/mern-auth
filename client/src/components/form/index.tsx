@@ -48,9 +48,9 @@ const FormRegOrLog = ({ type }: { type: string }) => {
                     onFinishFailed={onFinishFailed}
                 >
                     <Form.Item
-                        label="Username"
-                        name="username"
-                        rules={[{ required: true, message: 'Please input your username!' }]}
+                        label="Email"
+                        name="email"
+                        rules={[{ required: true, message: 'Please input your Email!' }]}
                     >
                         <Input />
                     </Form.Item>
@@ -61,8 +61,8 @@ const FormRegOrLog = ({ type }: { type: string }) => {
                         :
                         (
                             <Form.Item
-                                label="Email"
-                                name="email"
+                                label="Username"
+                                name="username"
                                 rules={[{ required: true, message: 'Please input your username!' }]}
                             >
                                 <Input />
