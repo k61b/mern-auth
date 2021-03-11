@@ -1,5 +1,4 @@
 import axios from "axios";
-import { setLoading } from "../reducers/loadReducer";
 import { setUser } from "../reducers/userReducer";
 
 interface IDefaultProps {
@@ -21,7 +20,7 @@ export const registerUser = async (
             password
         }).then(({ data }) => {
             console.log("You have successfully registered!")
-            alert(data.message)
+            alert(`Welcome, ${data.username}`)
         }).catch((reason => {
             console.log(`Error during registration request - ${reason}`)
         }))

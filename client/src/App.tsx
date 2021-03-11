@@ -19,9 +19,8 @@ function App() {
         (
           <Switch>
             <Route path={"/profile"} exact>
-              Tvoy profile clown
-                        </Route>
-
+              <h1 style={{ textAlign: "center" }}>Your Profile</h1>
+            </Route>
             <Redirect to={"/profile"} />
           </Switch>
         )

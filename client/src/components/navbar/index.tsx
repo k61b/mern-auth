@@ -15,8 +15,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="navbar__logo">
                 <div className="navbar__logo__text">
-                    <h1>StrikeAuth</h1>
-                    <p>Super mega auth</p>
+                    <h1><Link to={"/"}>MERN-AUTH</Link></h1>
                 </div>
             </div>
 
